@@ -25,6 +25,7 @@ async function finder() {
         // Here you can add your code to analyze the transaction
       });
     });
+    process.exit(1);
   } catch (e) {
     console.error(e);
   }
