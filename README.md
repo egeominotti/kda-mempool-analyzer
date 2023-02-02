@@ -1,3 +1,3 @@
-# kda-mempool-analyzer
+# KDA Mempool Analyzer
 
     node analyzer.js
