@@ -1,0 +1,19 @@
+{
+  "name": "mempool-analyzer",
+  "version": "1.0.0",
+  "description": "Kadena blockchain mempool analyzer",
+  "main": "analyzer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egeominotti/kda-mempool-analyzer.git"
+  },
+  "author": "viperblock.xyz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/egeominotti/kda-mempool-analyzer/issues"
+  },
+  "homepage": "https://github.com/egeominotti/kda-mempool-analyzer#readme"
+}
