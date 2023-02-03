@@ -1,6 +1,6 @@
 {
   "name": "mempool-analyzer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Kadena blockchain mempool analyzer",
   "main": "analyzer.js",
   "scripts": {
