@@ -22,6 +22,7 @@ async function finder() {
       });
       const lookupHash = await reqLookup.json();
       lookupHash.map(async (tx) => {
+	console.log(tx)
         // Here you can add your code to analyze the transaction
       });
     });

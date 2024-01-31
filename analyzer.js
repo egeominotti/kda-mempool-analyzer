@@ -15,9 +15,7 @@ Author: viperblock.xyz
 
 // You can switch hosts based on latency and where the server this script runs on is located
 global.host = "fr1.chainweb.com";
-global.chains = [
-  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
-];
+global.chains = [0, 1, 2];
 
 const start = async () => {
   try {
