@@ -2,7 +2,7 @@ const customHeaders = {
   "Content-Type": "application/json",
 };
 
-async function finder() {
+export async function finder() {
   try {
     global.chains.map(async (chain) => {
       const API = `https://${global.host}/chainweb/0.0/mainnet01/chain/${chain}/mempool`;
@@ -21,16 +21,11 @@ async function finder() {
         body: JSON.stringify(pendingHashes.hashes),
       });
       const lookupHash = await reqLookup.json();
-      lookupHash.map(async (tx) => {
-	console.log(tx)
-        // Here you can add your code to analyze the transaction
+      lookupHash.map(async (tx: any) => {
+        console.log(tx);
       });
     });
   } catch (e) {
     console.error(e);
   }
 }
-
-module.exports = {
-  finder,
-};
