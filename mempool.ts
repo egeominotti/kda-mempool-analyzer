@@ -1,11 +1,13 @@
+import { chains, host } from "./analyzer";
+
 const customHeaders = {
   "Content-Type": "application/json",
 };
 
 export async function finder() {
   try {
-    global.chains.map(async (chain) => {
-      const API = `https://${global.host}/chainweb/0.0/mainnet01/chain/${chain}/mempool`;
+    chains.map(async (chain: any) => {
+      const API = `https://${host}/chainweb/0.0/mainnet01/chain/${chain}/mempool`;
       console.log(
         `Searching the mempool for pending transactions chain ${chain} host ${host}`
       );

@@ -10,8 +10,8 @@ console.log(`
 `);
 
 // You can switch hosts based on latency and where the server this script runs on is located
-global.host = "fr1.chainweb.com";
-global.chains = [0, 1, 2];
+export const host = "fr1.chainweb.com";
+export const chains = [0, 1, 2];
 
 const sleep = (ms: number | undefined) =>
   new Promise((resolve) => setTimeout(resolve, ms));
